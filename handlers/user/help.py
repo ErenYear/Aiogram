@@ -1,6 +1,6 @@
 from aiogram.types import Message
 from aiogram.filters import Command
-from handlers import app
+from main import app
     
 
 @app.message(Command("help"))
