@@ -1,7 +1,7 @@
 from aiogram import Dispatcher
 from aiogram.types import ErrorEvent
 
-from .logging import logger
+from .logger import logger
 
 from .user import help_router as help, start_router as start
 
