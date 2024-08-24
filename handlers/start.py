@@ -1,3 +1,5 @@
+from aiogram.types import Message
+
 from main import dp
 
 
