@@ -3,7 +3,7 @@ from aiogram.types import ErrorEvent
 
 from .logger import logger
 
-from .user import help_router as help, start_router as start
+from .user import help, start
 
 
 def setup_handlers(dp: Dispatcher) -> None:
