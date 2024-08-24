@@ -1,5 +1,4 @@
 from aiogram.types import Message
-from aiogram.dispatcher.filters import CommandStart
 from aiogram.filters import Command
 
 from main import dp
