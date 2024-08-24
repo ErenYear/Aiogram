@@ -5,8 +5,7 @@ from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
 
 from config import TOKEN
-from handlers.user.start import start
-from handlers.user.help import help
+from app import setup_handlers
 
 bot = Bot(
     token=TOKEN,
