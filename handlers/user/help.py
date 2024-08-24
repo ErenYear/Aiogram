@@ -1,7 +1,8 @@
 from aiogram.types import Message
 from aiogram.filters import Command
-from main import app
-    
+from aiogram import Router
+
+help = Router()
 
 @app.message(Command("help"))
 async def help_command(message: Message):
