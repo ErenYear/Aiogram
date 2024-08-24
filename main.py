@@ -6,7 +6,7 @@ from aiogram.client.default import DefaultBotProperties
 
 from config import TOKEN
 from handlers.user.start import start
-from handlers.user.start import help
+from handlers.user.help import help
 
 bot = Bot(
     token=TOKEN,
