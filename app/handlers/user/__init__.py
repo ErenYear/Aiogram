@@ -1,5 +1,5 @@
-from .help import router
-from .start import router
+from .help import help
+from .start import start
 
 __all__ = ["router"]
 
