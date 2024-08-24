@@ -13,10 +13,10 @@ bot = Bot(
 )
 dp = Dispatcher()
 
-async def on_startup(dp: Dispatcher):
+async def on_startup():
     print("Bot has started successfully.")
 
-async def on_shutdown(dp: Dispatcher):
+async def on_shutdown():
     print("Bot is shutting down.")
 
 async def main():
