@@ -1,9 +1,9 @@
 from aiogram.types import Message
 from aiogram.filters import Command
-from .import lunduser
+from handlers import app
     
 
-@lunduser.message(Command("help"))
+@app.message(Command("help"))
 async def help_command(message: Message):
     help_text = (
         "Here are some commands you can use:\n"
