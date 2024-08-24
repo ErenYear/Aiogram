@@ -1,8 +1,10 @@
 from aiogram.types import Message
 from aiogram.filters import Command
-from main import app
+from aiogram import Router
 
-@app.message(Command("lund"))
+start = Router()
+
+@start.message(Command("start"))
 async def user_start(message: Message):
     await message.reply("Welcome!")
     
