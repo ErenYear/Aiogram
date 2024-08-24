@@ -5,13 +5,15 @@ from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
 
 from config import TOKEN
-from handlers import app
+from aiogram import Router
+
 
 bot = Bot(
     token=TOKEN,
     default=DefaultBotProperties(parse_mode=ParseMode.HTML),
 )
 dp = Dispatcher()
+app = Router()
 dp.include_router(app)
 
 async def on_startup():
