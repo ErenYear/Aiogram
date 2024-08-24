@@ -13,8 +13,6 @@ bot = Bot(
     default=DefaultBotProperties(parse_mode=ParseMode.HTML),
 )
 dp = Dispatcher()
-dp.include_router(start)
-dp.include_router(help)
 
 async def on_startup():
     print("Bot has started successfully.")
@@ -25,6 +23,7 @@ async def on_shutdown():
 async def main():
     dp.startup.register(on_startup)
     dp.shutdown.register(on_shutdown)
+    setup_handlers(dp)
     await dp.start_polling(bot)
 
 
