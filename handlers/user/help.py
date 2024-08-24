@@ -4,7 +4,7 @@ from aiogram import Router
 
 help = Router()
 
-@app.message(Command("help"))
+@help.message(Command("help"))
 async def help_command(message: Message):
     help_text = (
         "Here are some commands you can use:\n"
